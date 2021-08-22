@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+/* components */
+import InputClass from "./components/InputClass";
+import InputFunc from "./components/InputFunc";
+/* styles */
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div>
+        <h3>クラスコンポーネント製</h3>
+        <InputClass />
+      </div>
+      <div>
+        <h3>関数コンポーネント製</h3>
+        <InputFunc />
+      </div>
     </div>
   );
 }
